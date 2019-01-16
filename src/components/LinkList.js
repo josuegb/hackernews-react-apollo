@@ -23,8 +23,6 @@ class LinkList extends Component {
         {({ loading, error, data }) => {
           if (loading) return <div>Fetching...</div>;
           if (error) return <div>Error</div>;
-          console.log(data);
-          console.log(data);
           const linksToRender = data.feed.links;
           return (
             <div>
